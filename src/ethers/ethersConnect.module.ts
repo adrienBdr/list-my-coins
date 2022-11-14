@@ -1,12 +1,12 @@
 import { Module } from '@nestjs/common';
-import { ConfigService } from '@nestjs/config';
+import { ConfigService, ConfigModule } from '@nestjs/config';
 import { HttpModule } from '@nestjs/axios';
 import { EthersModule, MAINNET_NETWORK } from 'nestjs-ethers';
 import { EthersService } from './ethers.service';
 
-
 @Module({
   imports: [
+    ConfigModule,
     EthersModule.forRootAsync({
       inject: [ConfigService],
       token: 'eth',

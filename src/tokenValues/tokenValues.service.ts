@@ -1,8 +1,8 @@
 import { Injectable } from '@nestjs/common';
 import { HttpService } from '@nestjs/axios';
 import {lastValueFrom} from 'rxjs';
-import { GECKO_PRICES_API_CALL } from 'src/constants';
-import { Token } from 'src/ethers/interfaces/token.interface';
+import { GECKO_PRICES_API_CALL } from '../constants';
+import { Token } from '../ethers/interfaces/token.interface';
 import { tokenValues } from './interfaces/tokenValues.interface';
 
 @Injectable()

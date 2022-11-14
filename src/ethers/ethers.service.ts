@@ -5,7 +5,7 @@ import {
 import { HttpService } from '@nestjs/axios';
 import { StaticJsonRpcProvider, EthersContract, Contract } from 'nestjs-ethers';
 import { lastValueFrom } from 'rxjs';
-import { TOKEN_LIST_SOURCE } from 'src/constants';
+import { TOKEN_LIST_SOURCE } from '../constants';
 import { Token } from './interfaces/token.interface';
 import * as ERC20ABI from '../contracts/abis/erc20.json';
 

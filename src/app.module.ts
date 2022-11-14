@@ -7,7 +7,7 @@ import { TokenValuesModule } from './tokenValues/tokenValues.module';
 import { ConfigModule } from '@nestjs/config';
 
 @Module({
-  imports: [EthersConnectModule, BalancesModule, TokenValuesModule, ConfigModule.forRoot({ isGlobal: true})],
+  imports: [EthersConnectModule, BalancesModule, TokenValuesModule, ConfigModule.forRoot({ isGlobal: true })],
   controllers: [AppController],
   providers: [AppService],
 })

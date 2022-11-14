@@ -1,8 +1,8 @@
 import { Injectable } from '@nestjs/common';
-import { NETWORK_TO_CHAIN_ID, NETWORK_TO_GECKO_ID } from 'src/constants';
-import { Token } from 'src/ethers/interfaces/token.interface';
-import { tokenValues } from 'src/tokenValues/interfaces/tokenValues.interface';
-import { TokenValuesService } from 'src/tokenValues/tokenValues.service';
+import { NETWORK_TO_CHAIN_ID, NETWORK_TO_GECKO_ID } from '../constants';
+import { Token } from '../ethers/interfaces/token.interface';
+import { tokenValues } from '../tokenValues/interfaces/tokenValues.interface';
+import { TokenValuesService } from '../tokenValues/tokenValues.service';
 import { EthersService } from '../ethers/ethers.service'
 import { networkType } from './interfaces/network.interface';
 import { formatFixed } from 'nestjs-ethers'
