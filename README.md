@@ -6,7 +6,7 @@ api endpoint to get a list of coins with their values in $ for a network address
 2. Run `yarn install`
 3. Run `yarn start`
 
-The API only provide one endpoint: /balances/{ eth | poly | arb }/{ wallet address }
+The API only provide one endpoint: `/balances/{ eth | poly | arb }/{ wallet address }
 The response will be a list of erc20 tokens owned by the address on the chain specified while calling the endpoint:
 ```
 [
